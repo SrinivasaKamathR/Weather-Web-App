@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Weather Web App</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="locationInput"
+          placeholder="Enter location (e.g., city or ZIP code)"
+        />
+        <button id="getWeatherButton">Get Weather</button>
+      </div>
+      <div id="weatherInfo"></div>
+      <div id="errorInfo"></div>
+      <div id="unitToggle">
+        <input type="radio" id="celsius" name="unit" value="metric" checked />
+        <label for="celsius">Celsius</label>
+        <input type="radio" id="fahrenheit" name="unit" value="imperial" />
+        <label for="fahrenheit">Fahrenheit</label>
+      </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

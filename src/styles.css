@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#weatherInfo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#errorInfo {
+  margin-top: 20px;
+  text-align: center;
+  color: red;
+}
+
+#unitToggle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Adjust styles for tablets and larger screens */
+  .container {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  /* Center the container */
+  .container {
+    margin: 0 auto;
+  }
+
+  .search-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type="text"] {
+    max-width: none;
+    margin-right: 10px;
+  }
+}
